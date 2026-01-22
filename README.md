@@ -22,11 +22,11 @@ The model was evaluated on a distinct test set.
 
 | Metric | Score | Note |
 | :--- | :--- | :--- |
-| **Accuracy** | **94%** | Overall performance |
-| **Recall (Rotten)** | **1.00** | Critical for food safety (Zero False Negatives) |
-| **Precision (Fresh)** | **1.00** | High confidence in fresh predictions |
+| **Accuracy** | **96%** | High overall performance |
+| **Recall (Rotten)** | **1.00** | **Critical Safety:** Zero "Rotten" items missed (0 False Negatives). |
+| **Precision (Fresh)** | **1.00** | **High Efficiency:** If predicted "Fresh", it is guaranteed to be fresh. |
 
-> **Business Insight:** In a real-world warehouse scenario, this model minimizes health risks by ensuring 100% of rotten items are detected, even if it means being slightly conservative with fresh items.
+> **Business Insight:** The model operates with a "Safety First" principle. It successfully captures 100% of the rotten fruits. While it is slightly conservative (classifying a few complex fresh fruits as rotten to be safe), it ensures that **no rotten fruit ever reaches the customer.**
 
 ## 🛠️ Technologies Used
 * **Deep Learning:** TensorFlow, Keras (EfficientNetV2)
